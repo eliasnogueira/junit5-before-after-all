@@ -31,11 +31,11 @@ public class MyJUnit5Extension implements BeforeAllCallback, AfterAllCallback {
 
     @Override
     public void beforeAll(ExtensionContext context) {
-        System.out.println("MyJUnit5Extension.beforeAll");
+        System.out.println("[pre-condition] Should run only once");
     }
 
     @Override
     public void afterAll(ExtensionContext context) {
-        System.out.println("MyJUnit5Extension.afterAll");
+        System.out.println("[post-condition] Should run only once");
     }
 }
