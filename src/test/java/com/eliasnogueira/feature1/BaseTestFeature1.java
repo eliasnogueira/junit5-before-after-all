@@ -27,7 +27,7 @@ import com.eliasnogueira.BaseTest;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 
-public abstract class BaseFeature1Test extends BaseTest {
+public abstract class BaseTestFeature1 extends BaseTest {
 
     @BeforeAll
     static void setUp() {

@@ -21,34 +21,21 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.eliasnogueira.feature1;
+package com.eliasnogueira.feature2;
 
-import org.junit.jupiter.api.Test;
+import com.eliasnogueira.BaseTest;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 
-class Feature1ExtendedTest extends BaseFeature1Test {
+public abstract class BaseTestFeature2 extends BaseTest {
 
-    @Test
-    void test1() {
-        System.out.println("Feature1ExtendedTest.test1");
+    @BeforeAll
+    static void setUp() {
+        System.out.println("BaseFeature2Test.beforeAll");
     }
 
-    @Test
-    void test2() {
-        System.out.println("Feature1ExtendedTest.test2");
-    }
-
-    @Test
-    void test3() {
-        System.out.println("Feature1ExtendedTest.test3");
-    }
-
-    @Test
-    void test4() {
-        System.out.println("Feature1ExtendedTest.test4");
-    }
-
-    @Test
-    void test5() {
-        System.out.println("Feature1ExtendedTest.test5");
+    @AfterAll
+    static void tearDown() {
+        System.out.println("BaseFeature2Test.afterAll");
     }
 }
