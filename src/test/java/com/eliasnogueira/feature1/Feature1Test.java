@@ -23,9 +23,10 @@
  */
 package com.eliasnogueira.feature1;
 
+import com.eliasnogueira.BaseTest;
 import org.junit.jupiter.api.Test;
 
-class Feature1Test extends BaseFeature1Test {
+class Feature1Test extends BaseTest {
 
     @Test
     void test1() {
