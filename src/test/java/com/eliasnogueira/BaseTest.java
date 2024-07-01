@@ -27,7 +27,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-@ExtendWith(MyJUnit5Extension.class)
+@ExtendWith(MyExtension.class)
 public abstract class BaseTest {
 
     @BeforeAll

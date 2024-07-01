@@ -27,15 +27,15 @@ import org.junit.jupiter.api.extension.AfterAllCallback;
 import org.junit.jupiter.api.extension.BeforeAllCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
 
-public class MyJUnit5Extension implements BeforeAllCallback, AfterAllCallback {
+public class MyExtension implements BeforeAllCallback, AfterAllCallback {
 
     @Override
     public void beforeAll(ExtensionContext context) {
-        System.out.println("[pre-condition] Should run only once");
+        System.out.println("MyJUnit5Extension.beforeAll");
     }
 
     @Override
     public void afterAll(ExtensionContext context) {
-        System.out.println("[post-condition] Should run only once");
+        System.out.println("MyJUnit5Extension.afterAll");
     }
 }
